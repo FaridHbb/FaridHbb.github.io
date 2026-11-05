@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AI Company, application personnelle de Farid : usage, connexion Gmail et données.">
+<title>Confidentialité · AI Company</title>
+<link rel="canonical" href="https://faridhbb.github.io/privacy.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header><a class="brand" href="index.html">AI Company</a><nav aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="privacy.html">Confidentialité</a><a href="terms.html">Conditions</a></nav></header>
+<main id="contenu"><p class="eyebrow">Données et accès Google</p>
+<h1>Confidentialité</h1>
+<p>Farid exploite AI Company comme application personnelle. Cette page décrit les traitements prévus par le logiciel et les données qu’il peut conserver.</p>
+<h2>Données utilisées</h2>
+<p>Lorsqu’un outil Gmail les consulte, les données peuvent comprendre les identifiants des messages et des fils, les adresses des expéditeurs et destinataires, les objets, les corps des messages, les dates, les métadonnées et le contenu des pièces jointes. Les brouillons et messages préparés comprennent les destinataires, l’objet et le texte rédigé.</p>
+<p>L’application traite aussi les instructions de Farid, les réponses des assistants, les résultats d’outils, les décisions d’approbation et les informations techniques sur les tâches. Les emails peuvent contenir des données personnelles de correspondants qui n’utilisent pas l’application.</p>
+<h2>Finalités et autorisations</h2>
+<p>Farid utilise ces données pour traiter sa correspondance, retrouver des informations, obtenir une synthèse, préparer une réponse et conserver le contexte de son travail. AI Company ne comporte pas de fonction de revente de données ou de ciblage publicitaire à partir des données Gmail.</p>
+<p>Les autorisations Google utilisées sont la lecture Gmail et la gestion des brouillons et de l’envoi. Le droit Google de gestion des brouillons permet aussi l’envoi ; le backend applique une restriction supplémentaire : un envoi exige l’approbation de Farid sur le destinataire et le contenu exact. L’application n’expose pas d’outil de suppression des messages Gmail.</p>
+<h2>Services qui reçoivent les données</h2>
+<p>Google reçoit les requêtes nécessaires à la connexion et aux opérations Gmail. Pour répondre à une demande, l’assistant peut recevoir les résultats Gmail dans son contexte de travail. Selon le routage configuré, AI Company transmet ce contexte à OpenRouter et au fournisseur de modèle sélectionné, ou à Claude CLI ou Codex CLI, qui communiquent avec les services Anthropic ou OpenAI. Le transfert peut inclure le contenu d’un message ou d’une pièce jointe consultée.</p>
+<p>Farid peut aussi retrouver ces informations dans les livrables ou les outils de travail qu’il utilise avec l’application. Les règles de conservation et de réutilisation des prestataires dépendent de leurs politiques et des réglages du compte concerné. Pour les appels qui passent par OpenRouter, AI Company exclut les fournisseurs dont la politique autorise l’utilisation des entrées pour entraîner leurs modèles. Cette restriction ne garantit pas une absence de conservation des données. Farid désactive l’utilisation de ses conversations et sessions de code pour améliorer les modèles sur le compte Claude qu’il utilise avec cette application. Tout changement de compte ou activation d’un autre service d’IA exige de vérifier ses réglages de traitement des données. Le logiciel ne réalise pas lui-même d’entraînement de modèles.</p>
+<h2>Engagement d’utilisation limitée des données Google</h2>
+<p>Farid s’engage à utiliser et à transmettre les informations reçues des API Google conformément à la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">politique Google relative aux données utilisateur</a>, y compris ses exigences d’utilisation limitée (<a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy#limited-use-of-user-data" rel="noreferrer">Limited Use</a>). Il réserve ces données aux fonctionnalités de messagerie et d’assistance décrites sur ce site, sans les vendre, les utiliser pour le ciblage publicitaire ou entraîner des modèles d’IA généralistes.</p>
+<h2>Stockage et conservation</h2>
+<p>L’application fonctionne sur le serveur personnel de Farid. Elle peut y conserver les conversations, les réponses, les résultats d’outils dans les checkpoints de reprise, les tâches et les mémoires. Les propositions d’envoi et leur audit peuvent inclure le contenu du message. Les journaux d’appels IA enregistrent notamment le fournisseur, le modèle, les volumes de tokens, les coûts et les erreurs.</p>
+<p>Le logiciel ne prévoit pas de purge automatique par ancienneté pour ces enregistrements. Farid les conserve jusqu’à leur suppression manuelle. Supprimer un email dans Gmail ou révoquer l’accès Google ne supprime pas les copies déjà présentes dans l’application. Une copie éventuellement conservée dans une sauvegarde demande un traitement distinct ; aucune échéance automatique de suppression des sauvegardes n’est définie ici.</p>
+<h2>Connexion et protection</h2>
+<p>Farid conserve les credentials OAuth Gmail dans un fichier de configuration privé sur son serveur, accessible à son compte système. Le connecteur garde en mémoire les tokens d’accès renouvelés. L’application ne demande pas le mot de passe Google et n’intègre pas ces credentials aux instructions envoyées aux modèles.</p>
+<p>L’accès à l’application privée utilise un contrôle d’authentification. Le code de ces pages publiques ne contient aucun traceur, formulaire ou cookie. L’hébergeur des pages peut traiter des données techniques de connexion selon ses propres règles.</p>
+<h2>Contrôle et suppression</h2>
+<p>Le titulaire du compte peut révoquer AI Company depuis les <a href="https://myaccount.google.com/connections" rel="noreferrer">connexions de son compte Google</a>. Farid peut arrêter l’application, retirer ses credentials OAuth et supprimer les données conservées sur son serveur, y compris les copies et souvenirs qui en dérivent. Le logiciel ne propose pas de bouton unique qui efface ces données dans tous les emplacements et chez tous les prestataires.</p>
+<p>Farid est l’opérateur responsable de cette application personnelle et de la gestion des demandes concernant ses données. Son <a href="https://github.com/FaridHbb" rel="noreferrer">profil GitHub</a> constitue le point de contact public.</p></main>
+<footer><p>Application personnelle exploitée par Farid. <a href="https://github.com/FaridHbb" rel="noreferrer">Contacter Farid via son profil GitHub</a>. Mise à jour : 5 novembre 2026.</p></footer>
+</body>
+</html>
